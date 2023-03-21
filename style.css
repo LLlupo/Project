@@ -2,24 +2,3 @@ html {
     margin: 0;
     padding: 0;
 }
-header {
-    height: 150px;
-    width: 100%;
-    background-color: #7AD7FF;
-}
-#logo {
-    position: relative;
-}
-header ul {
-    font-size: 24px;
-    list-style-type: none;
-}
-header ul li {
-    width: 200px;
-    height: inherit;
-    position: relative;
-    float: left;
-}
-header ul li:hover {
-    background-color: blue;
-}
