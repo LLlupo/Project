@@ -1,6 +1,9 @@
 html, body {
     margin: 0;
     padding: 0;
+    background-color: #00B3EC;
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 header {
     height: 150px;
@@ -8,32 +11,15 @@ header {
     background-color: #7AD7FF;
 }
 #logo {
-    width: 100px;
+    width: 150px;
     height: 100px;
-    background-color: #000;
 }
-/* nav ul {
-    font-size: 24px;
-    text-align: center;
-    display: flex;
-    
-    display: flex;  
-    justify-content: space-around;
-    align-content: center;
+#logoImg {
+    height: 100px;
 }
-nav ul li { 
-    list-style-type: none;
-}
-nav ul li a {
-    text-decoration: none;
-}
-nav ul li:hover {
-    background-color: blue;
-} */
 .Log {
-    height: min-content;
-    text-decoration: none;
-    font-size: 24px;
+    display: block;
+    padding: 10px;
     background-color: white;
     border-radius: 6px;
 }
@@ -42,10 +28,56 @@ nav {
     height: 100%;
     display: flex;  
     justify-content: space-around;
-    align-content: center;
+    align-items: center;
 }
-.navig {
+nav a {
     text-decoration: none;
-    font-size: 24px;
+    color: black;
     height: min-content;
+}
+content {
+    display: flex;
+    margin: 3% 5% auto 5%;
+    gap: 20px;
+}
+.articles {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.newstitle {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.news {
+    background-color: white;
+    padding: 3%;
+}
+.text {
+    font-size: 20px;
+}
+.NewsImg {
+    float: left;
+    margin: auto 5% 3% auto;
+    overflow: hidden;
+    height: 200px;
+    width: 200px;
+}
+.sidebar {
+    background-color: white;
+    text-align: center;
+    height: min-content;
+    padding: 1%;
+}
+.sidebar a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    margin-bottom: 10px;
+}
+footer {
+    background-color: black;
+    height: 50px;
+    width: 100%;
 }
