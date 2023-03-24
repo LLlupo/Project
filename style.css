@@ -1,6 +1,8 @@
-html, body {
+* {
     margin: 0;
     padding: 0;
+}
+html, body {
     background-color: #00B3EC;
     font-size: 24px;
     font-family: Arial, Helvetica, sans-serif;
@@ -18,10 +20,12 @@ header {
     height: 100px;
 }
 .Log {
-    display: block;
     padding: 10px;
     background-color: white;
     border-radius: 6px;
+}
+.Log:hover {
+    background-color: lightgray;
 }
 nav {
     width: 100%;
@@ -34,11 +38,17 @@ nav a {
     text-decoration: none;
     color: black;
     height: min-content;
+    padding: 5px;
+}
+nav a:hover {
+    background-color: white;
+    border-radius: 6px;
 }
 content {
     display: flex;
     margin: 3% 5% auto 5%;
     gap: 20px;
+    padding-bottom: 30px;
 }
 .articles {
     display: flex;
@@ -49,6 +59,11 @@ content {
     text-decoration: none;
     color: black;
     font-weight: bold;
+    display: block;
+    margin-bottom: 2%;
+}
+.newstitle:hover {
+    color: grey;
 }
 .news {
     background-color: white;
@@ -60,7 +75,6 @@ content {
 .NewsImg {
     float: left;
     margin: auto 5% 3% auto;
-    overflow: hidden;
     height: 200px;
     width: 200px;
 }
@@ -68,7 +82,7 @@ content {
     background-color: white;
     text-align: center;
     height: min-content;
-    padding: 1%;
+    padding: 2%;
 }
 .sidebar a {
     text-decoration: none;
@@ -76,8 +90,91 @@ content {
     display: block;
     margin-bottom: 10px;
 }
-footer {
-    background-color: black;
+.sidebar a:hover {
+    color: grey;
+}
+.sidebar p {
+    margin: 3% auto 3% auto;
+}
+.gear {
+    height: 30px;
+    animation: myAnim 10s linear normal infinite;
+}
+
+@keyframes myAnim {
+    from {
+        transform: rotate( 0deg );
+
+    }
+    to {
+        transform: rotate( 360deg );
+    }
+ }
+ @media screen and (max-width: 768px) {
+html, body {font-size: 22px;
+    }
+header {
+    height: 125px;
+}
+.gear {
+    display: none;
+}
+#logo {
+    height: min-content;
+    width: min-content;
+}
+#logoImg {
+    height: 70px;
+}
+.Log {
+    padding: 7px;
+}
+content {
+    flex-direction: column;
+}
+.text {
+    font-size: 20px;
+}
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    order: -1;
+}
+.sidebar div {
+    display: flex;
+    flex-wrap: wrap;
+}
+.sidebar a {
+    margin-left: 5%;
+}
+}
+
+@media screen and (max-width: 480px) {
+html, body {font-size: 20px;
+}
+header {
+    height: 100px;
+}
+#logoImg {
     height: 50px;
+}
+.extra {
+    display: none;
+}
+.text {
+    font-size: 18px;
+}
+.NewsImg {
+    display: flex;
+    justify-content: center;
     width: 100%;
+    height: auto;
+    float: none;
+}
+.NewsImg img {
+    max-width: 100%;
+}
+.sidebar {
+    display: none;
+}
 }
